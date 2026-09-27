@@ -1,0 +1,22 @@
+{
+"name": "forest",
+"description": "forest with leaves and such",
+"preview": "preview.png",
+"readme": "README.md",
+"usercss": "user.css",
+"schemes": "color.ini",
+"include": [],
+"authors": [
+{
+"name": "william",
+"url": "https://github.com/siqnole"
+}
+],
+"tags": [
+"dark",
+"fall",
+"gloomy",
+"aesthetic",
+"animated"
+]
+}

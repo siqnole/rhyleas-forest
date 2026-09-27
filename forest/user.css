@@ -1,0 +1,385 @@
+/* =========================================
+   🍂 FOREST AUTUMN
+   ========================================= */
+
+:root {
+    /* Main autumn palette */
+    --forest-orange: #c65d18;
+    --forest-orange-light: #d9822b;
+    --forest-gold: #d9a52e;
+
+    --forest-green: #687044;
+    --forest-green-dark: #39442b;
+    --forest-moss: #78804d;
+
+    --forest-dark: #171813;
+    --forest-brown: #241b14;
+
+    /* Spotify accent overrides */
+    --spice-button: #c65d18;
+    --spice-button-active: #d9a52e;
+    --spice-accent: #c65d18;
+
+    --encore-bright-accent-set: #c65d18;
+    --encore-bright-accent-hover: #d9a52e;
+    --encore-bright-accent-press: #d9a52e;
+    --encore-bright-accent-active: #d9a52e;
+}
+
+
+/* =========================================
+   TOP BAR
+   ========================================= */
+.main-topBar-background {
+       background:
+           linear-gradient(
+               105deg,
+               rgba(57, 68, 43, 0.96) 0%,
+               rgba(77, 75, 40, 0.94) 30%,
+               rgba(121, 82, 38, 0.91) 58%,
+               rgba(174, 91, 31, 0.87) 82%,
+               rgba(198, 93, 24, 0.84) 100%
+           ) !important;
+
+       backdrop-filter: blur(28px) saturate(125%) !important;
+       -webkit-backdrop-filter: blur(28px) saturate(125%) !important;
+
+       box-shadow:
+           0 2px 18px rgba(20, 25, 12, 0.18) !important;
+   }
+
+
+
+/* =========================================
+   SIDEBAR
+   ========================================= */
+
+.main-yourLibraryX-libraryContainer,
+.Root__nav-bar {
+    background:
+        rgba(42, 49, 31, .88) !important;
+
+    backdrop-filter: blur(20px);
+}
+
+
+/* =========================================
+   MAIN FOREST BACKGROUND
+   ========================================= */
+
+.Root__main-view {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(48, 54, 30, .62),
+           #ac7b60
+        ),
+        url("images/forest-bg.jpg")
+        !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+
+/* =========================================
+   NOW PLAYING BAR
+   ========================================= */
+
+.Root__now-playing-bar {
+    background:
+        rgba(37, 43, 27, .88) !important;
+
+    backdrop-filter: blur(20px);
+}
+
+
+/* =========================================
+   ALBUM ART
+   ========================================= */
+
+.main-image-image {
+    border-radius: 14px !important;
+}
+
+
+/* =========================================
+   PLAYLIST ROWS
+   ========================================= */
+
+.main-trackList-trackListRow:hover {
+    background:
+        rgba(210, 130, 43, .10) !important;
+}
+
+
+/* =========================================
+   QUICK ACCESS
+   ========================================= */
+
+.main-quickAccess-quickAccessItem,
+.view-homeShortcutsGrid-shortcut {
+    background:
+        linear-gradient(
+            135deg,
+            #3e4637,
+            #4a5942
+        ) !important;
+
+    border-radius: 12px !important;
+}
+
+
+/* =========================================
+   REMOVE SPOTIFY GRAY AREAS
+   ========================================= */
+
+.main-entityHeader-backgroundColor,
+.main-home-homeHeader,
+.main-shelf-shelf {
+    background: transparent !important;
+}
+
+
+/* =========================================
+   SCROLLBAR
+   ========================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:
+        linear-gradient(
+            180deg,
+            #753a1c,
+            #d9a52e
+        );
+
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(30, 35, 22, .45);
+}
+
+
+/* =========================================
+   PROGRESS BAR
+   ========================================= */
+
+.progress-bar__fg,
+.playback-progressbar-progress {
+    background:
+        linear-gradient(
+            90deg,
+            #8b4b1d,
+            #c65d18,
+            #d9a52e
+        ) !important;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.main-card-card {
+    border-radius: 18px !important;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.main-card-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 24px
+        rgba(67, 45, 18, .28);
+}
+
+
+/* =========================================
+   PLAY BUTTONS
+   ========================================= */
+
+.view-homeShortcutsGrid-playButton,
+.view-homeShortcutsGrid-PlayButtonContainer {
+    display: none !important;
+}
+
+
+/* Remove Spotify green */
+
+.encore-bright-accent-set {
+    background-color:
+        #c65d18 !important;
+
+    color:
+        #171813 !important;
+}
+
+.encore-bright-accent-set:hover {
+    background-color:
+        #d9a52e !important;
+}
+
+
+/* Global Play Buttons */
+
+button[aria-label="Play"] {
+    background-color:
+        #c65d18 !important;
+
+    color:
+        #171813 !important;
+}
+
+button[aria-label="Play"]:hover {
+    background-color:
+        #d9a52e !important;
+}
+
+
+/* Play icons */
+
+button[aria-label="Play"] svg,
+button[aria-label="Play"] path {
+    fill: #171813 !important;
+    color: #171813 !important;
+}
+
+
+/* =========================================
+   RIGHT SIDEBAR
+   ========================================= */
+
+.Root__right-sidebar {
+    backdrop-filter: blur(20px);
+
+    background:
+        rgba(25, 30, 19, .82) !important;
+}
+
+.main-nowPlayingView-section,
+.main-nowPlayingView-contextItemInfo {
+    background:
+        rgba(29, 32, 21, .88) !important;
+
+    backdrop-filter: blur(20px);
+}
+
+
+/* =========================================
+   SEARCH BAR
+   ========================================= */
+
+.main-topBar-searchBar {
+    background:
+        rgba(110, 117, 59, .12) !important;
+}
+
+
+/* =========================================
+   KILL DYNAMIC ARTWORK GRADIENTS
+   ========================================= */
+
+.playlist-playlist-actionBarBackground-background {
+    --background-base:
+        #171813 !important;
+
+    --background-highlight:
+        #282d1d !important;
+
+    --background-press:
+        #11130f !important;
+
+    --background-elevated-base:
+        #171813 !important;
+
+    --background-elevated-highlight:
+        #282d1d !important;
+
+    --background-elevated-press:
+        #11130f !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(42, 48, 29, .96),
+            rgba(20, 23, 15, .98)
+        ) !important;
+}
+
+
+/* =========================================
+   HOME PAGE
+   ========================================= */
+
+.main-home-homeHeader,
+.main-home-filterChipsSection,
+.main-home-content {
+    background: transparent !important;
+}
+
+.main-home-homeHeader::before,
+.main-home-homeHeader::after {
+    display: none !important;
+}
+
+
+/* =========================================
+   SCROLL BACKGROUND
+   ========================================= */
+
+.main-view-container__scroll-node-child {
+    --background-base:
+        #171813 !important;
+
+    --background-highlight:
+        #252b1b !important;
+
+    --background-press:
+        #12140f !important;
+}
+
+
+/* =========================================
+   ARTIST HEADER
+   ========================================= */
+
+.main-entityHeader-backgroundColor,
+.main-entityHeader-backgroundOverlay,
+.main-entityHeader-overlay {
+    background: transparent !important;
+    opacity: 0 !important;
+}
+
+
+/* Forest-colored artist gradient */
+
+.main-entityHeader-container {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(42, 47, 28, .92),
+            rgba(22, 25, 16, .98)
+        ) !important;
+}
+
+
+/* =========================================
+   SUBTLE AUTUMN GLOW
+   ========================================= */
+
+.main-card-card:hover,
+.view-homeShortcutsGrid-shortcut:hover {
+    box-shadow:
+        0 0 22px
+        rgba(198, 93, 24, .14) !important;
+}
